@@ -63,6 +63,7 @@ public class RegistrationController {
         } catch (RuoloNotFoundException e){
             ruolo = ruoloService.save(new Ruolo("SIMPLEUSER"));
         }
+
         utenza = utenzaService.create(utenza);
 
         System.out.println(utenza);
